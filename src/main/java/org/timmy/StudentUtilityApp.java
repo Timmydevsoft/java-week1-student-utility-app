@@ -7,7 +7,7 @@ public class StudentUtilityApp {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-        showMenu();
+
         int option;
 
         do{
@@ -15,15 +15,16 @@ public class StudentUtilityApp {
             option = scanner.nextInt();
             switch (option){
                 case 1:
-                    addTwoNumbers();
+                    addTwoNumbers(scanner);
                     break;
                 case 2:
-                    checkEven();
+                    checkEven(scanner);
+                    break;
                 case 3:
-                    printNumFromOneToN();
+                    printNumFromOneToN(scanner);
                     break;
                 case 4:
-                displayDayOfTheWeek();
+                displayDayOfTheWeek(scanner);
                 break;
 
             }
@@ -45,8 +46,7 @@ public class StudentUtilityApp {
         System.out.println("Enter your choice: ");
     }
 
-    static void addTwoNumbers(){
-        Scanner scanner = new Scanner(System.in);
+    static void addTwoNumbers(Scanner scanner){
         System.out.println("Enter the first number: ");
         int firstNumber = scanner.nextInt();
         System.out.println("Enter the second number: ");
@@ -55,8 +55,7 @@ public class StudentUtilityApp {
         System.out.println("Sum is: "+sum);
     }
 
-    static void checkEven(){
-        Scanner scanner = new Scanner(System.in);
+    static void checkEven(Scanner scanner){
         System.out.println("Enter the number: ");
         int firstNumber = scanner.nextInt();
 
@@ -64,8 +63,8 @@ public class StudentUtilityApp {
         System.out.println(res);
     }
 
-    static void printNumFromOneToN(){
-        Scanner scanner = new Scanner(System.in);
+    static void printNumFromOneToN(Scanner scanner){
+
 
         System.out.println("Enter the number: ");
         int number = scanner.nextInt();
@@ -75,8 +74,7 @@ public class StudentUtilityApp {
         }
     }
 
-    static void displayDayOfTheWeek(){
-        Scanner scanner = new Scanner(System.in);
+    static void displayDayOfTheWeek(Scanner scanner){
         System.out.println("Enter the number of the week: ");
         int option = scanner.nextInt();
         switch (option){
