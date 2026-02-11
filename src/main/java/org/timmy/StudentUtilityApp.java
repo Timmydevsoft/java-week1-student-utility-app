@@ -24,9 +24,10 @@ public class StudentUtilityApp {
                     printNumFromOneToN(scanner);
                     break;
                 case 4:
-                displayDayOfTheWeek(scanner);
-                break;
-
+                    displayDayOfTheWeek(scanner);
+                    break;
+                default:
+                    System.out.println("Invalid option");
             }
 
         }while(option !=5);
